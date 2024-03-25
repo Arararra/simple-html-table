@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple HTML Table</title>
+  <style>
+    td {
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Registration</h1>
+
+  <form action="#" style="vertical-align: top;">
+    <fieldset>
+      <legend>Biodata</legend>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="nama">Nama Mahasiswa</label>
+            </td>
+            <td>
+              <input type="text" name="nama" id="nama" placeholder="Nama Anda">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nim">No Induk Mahasiswa (NIM)</label>
+            </td>
+            <td>
+              <input type="number" name="nim" id="nim" placeholder="12032xxxxx">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="alamat">Alamat Mahasiswa</label>
+            </td>
+            <td>
+              <textarea name="alamat" id="alamat" cols="30" rows="10" placeholder="Alamat Anda"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="tanggal">Tanggal Lahir</label>
+            </td>
+            <td>
+              <input type="date" name="tanggal" id="tanggal">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Jenis Kelamin</label>
+            </td>
+            <td>
+              <input type="radio" name="laki" id="laki"> <label for="laki">Laki-Laki</label>
+              <input type="radio" name="perempuan" id="perempuan"> <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="foto">Upload Foto</label>
+            </td>
+            <td>
+              <input type="file" name="foto" id="foto">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="web">URL Website</label>
+            </td>
+            <td>
+              <input type="url" name="web" id="web" placeholder="URL Website Anda">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="perguruan">Perguruan Tinggi</label>
+            </td>
+            <td>
+              <input type="text" name="perguruan" id="perguruan">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
