@@ -6,12 +6,15 @@
     td {
       vertical-align: top;
     }
+    fieldset {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <h1>Form Registration</h1>
 
-  <form action="#" style="vertical-align: top;">
+  <form action="#">
     <fieldset>
       <legend>Biodata</legend>
       <table>
@@ -53,8 +56,8 @@
               <label>Jenis Kelamin</label>
             </td>
             <td>
-              <input type="radio" name="laki" id="laki"> <label for="laki">Laki-Laki</label>
-              <input type="radio" name="perempuan" id="perempuan"> <label for="perempuan">Perempuan</label>
+              <input type="radio" name="gender" value="laki" id="laki"> <label for="laki">Laki-Laki</label>
+              <input type="radio" name="gender" value="perempuan" id="perempuan"> <label for="perempuan">Perempuan</label>
             </td>
           </tr>
           <tr>
@@ -84,6 +87,68 @@
         </tbody>
       </table>
     </fieldset>
+    
+    <fieldset>
+      <legend>Info Akun</legend>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input type="email" name="email" id="email" placeholder="Email Anda">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="username">Username</label>
+            </td>
+            <td>
+              <input type="text" name="username" id="username" placeholder="Username Anda">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>
+              <input type="password" name="password" id="password" placeholder="Password Anda">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ulangi">Ulangi Password</label>
+            </td>
+            <td>
+              <input type="password" name="ulangi" id="ulangi" placeholder="Password Anda">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Kemampuan Dasar</legend>
+      <input type="checkbox" name="Kemampuan" value="html" id="html">
+      <label for="html">HTML</label>
+      <input type="checkbox" name="Kemampuan" value="css" id="css">
+      <label for="css">CSS</label>
+      <input type="checkbox" name="Kemampuan" value="js" id="js">
+      <label for="js">JavaScript</label>
+      <input type="checkbox" name="Kemampuan" value="php" id="php">
+      <label for="php">PHP</label>
+      <input type="checkbox" name="Kemampuan" value="mysql" id="mysql">
+      <label for="mysql">MySQL</label>
+      <input type="checkbox" name="Kemampuan" value="laravel" id="laravel">
+      <label for="laravel">Laravel</label>
+      <input type="checkbox" name="Kemampuan" value="react" id="react">
+      <label for="react">React Native</label>
+    </fieldset>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Simpan</button>
+    <button type=":)">Button</button>
   </form>
 </body>
 </html>
